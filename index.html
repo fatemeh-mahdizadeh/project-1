@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="hoverup  flex justify-center md:justify-end">
+        <div class="absolute mt-3 md:mt-3">
+            <div class="flex flex-col  mr-8 md:mt-8 ">
+                <img src="./img/cart.png" alt="" class=" w-10 h-10  xl:mr-32 md:mr-10 image-hover">
+                <div class="bg-white border-style text-base px-1 pt-3 mt-3 hidden overflow-y-auto ">
+                    <ul class="flex flex-row justify-between  pl-4 pr-4 ">
+                        <li>Image</li>
+                        <li class="ml-4">food name</li>
+                        <li class="">Price</li>
+                        <li>delete</li>
+                    </ul>
+                    <hr class="mt-2 text-2xl">
+                    <button class= "button w-11/12 text-center text-lg mt-6 ml-2 border border-black rounded-lg py-1">clean</button>
+                    <div class="addHear"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header class="bg-image flex  md:flex-col w-12/12">
+        
+        <section class="flex row lg:w-11/12 md:w-12/12 hidden md:flex" >
+            <img src="./img/logo.png" alt="" class=" w-10 h-10 lg:ml-40 md:mt-10 md:ml-10 flex ">
+            <ul class="text-white lg:w-9/12 md:w-10/12 justify-center text-lg pt-12 lg:mx-4  md:flex md:row " >
+                <li class="lg:mr-8 md:mr-5 text-xl">Home</li>
+                <li class="lg:mx-8 md:mx-5 text-xl">Pizzas</li>
+                <li class="lg:mx-8 md:mx-5 text-xl">Sadwich</li>
+                <li class="lg:mx-8 md:mx-5 text-xl">Drinks</li>
+                <li class="lg:mx-8 md:mx-5 text-xl">About Us</li>
+            </ul>
+        </section >
+        <section class=" hidden lg:flex">
+            <div class="fex items-center pt-18 mx-auto">
+                <div class=" w-4/12 "><p class="border-b-2 border-w "></p></div>
+                <p class=" mx-auto  mt-19 text-size-50px ">Sar Talo Resturant</p>
+            
+            </div>
+        </section>
+        <section class="hidden md:flex lg:hidden">
+            <div class="fex items-center  mx-auto">
+                <div class=" w-4/12 "><p class="border-b-2 border-w2 "></p></div>
+                <p class=" mx-auto text-size-40px">Sar Talo Resturant</p>
+            
+            </div>
+        </section>
+
+        <section class="absolute xl:pl-40 lg:pl-8 md:pl-10 hidden md:flex ">
+            <form action="#" class="mx-auto  with md:h-64 md:flex-col md:flex border border-white bg-white rounded-xl text-coler ">
+                <p class="pt-8 ml-10 ml-6 text-base">filter by:</p>
+                <label for="pizza"  class=" flex flex-row pt-4 pl-8">
+                    <input type="checkbox"  name="name" id="pizaa" class="pizza"  >
+                    <p class="ml-4 text-lg pizza">Pizza</p>
+                </label>
+                
+                <label for="Burger" class="flex flex-row pt-4  pl-8">
+                    <input type="checkbox"  name="name" id="Burger" class="Burger" >
+                    <p class="ml-4 text-lg Burger">Burger</p>
+                </label>
+                
+                <label for="Sandwich"  class="flex flex-row pt-4  pl-8">
+                    <input type="checkbox"  name="name" id="Sandwich" class="Sandwich">
+                    <p class="ml-4 text-lg Sandwich">Sandwich</p>
+                </label>
+                
+                <label for="Drink" class="flex flex-row pt-4 pl-8">
+                    <input type="checkbox"  name="name" id="Drink"  class="Drink">
+                    <p class="ml-4 text-lg Drink">Drink</p>
+                </label>
+            </form>
+        </section>
+        <div class="md:hidden flex flex-col w-full">
+            <section class="flex flex-row  justify-between w-12/12">
+                <img src="./img/logo.png" alt="" class=" w-6 h-6 my-5 mx-4">
+                <img src="./img/Group 18.png " class="w-5 h-4 mr-4 my-5" alt="">
+            </section>
+            <section class="mx-auto pb-5 ">
+                <h1 class="text-white mx-auto text-2xl ">Sar Talo Resturant</h1>
+            </section>
+            <section class="">
+                <form action="#" class="w-11/12 form2 mx-auto grid grid-cols-2 py-2 bg-white border  rounded-xl border-white text-coler">
+                    <p class="py-1 ml-4 text-base">filter by:</p>
+                    <br>
+                    <label for="pizaa"  class="flex flex-row ml-4 p-1 ">
+                        <input type="checkbox"  name="name" id="pizaa" class="pizza" >
+                        <p class="ml-2 text-lg pizza">Pizza</p>
+                    </label>
+                    
+                    <label for="Burger" class="flex flex-row ml-4 p-1 ">
+                        <input type="checkbox"  name="name" id="Burger" class="Burger">
+                        <p class="ml-2 text-lg Burger">Burger</p>
+                    </label>
+                    
+                    <label for="Sandwich"  class="flex flex-row ml-4 p-1 ">
+                        <input type="checkbox"  name="name" id="Sandwich" class="Sandwich">
+                        <p class="ml-2 text-lg  Sandwich">Sandwich</p>
+                    </label>
+                    
+                    <label for="Drink" class="flex flex-row ml-4 p-1 ">
+                        <input type="checkbox"  name="name" id="Drink"  class="Drink">
+                        <p class="ml-2 text-lg  Drink">Drink</p>
+                    </label>
+                </form>
+            </section>
+    
+        </div>
+        
+            
+    </header>
+
+    <!--------------------------------------------------------------->
+    
+    <main class="bg-purple-100 flex justify-end  ">
+      
+        <div class="md:flex w-12/12 md:flex-col  hidden xl:mr-40 md:mr-10 lg:pt-10  ">
+            <article class="flex flex-row lg:flex py-4  text-base ">
+                <h6 class=" mr-4 c-blue px-2">Sort By lowest Price</h6>
+                <h6 class="ml-3 c-blue">Sort By Highest Price</h6>
+            </article>
+            
+            <article class="main lg:grid-cols-3 lg:grid-rows-3 md:grid-cols-2  grid coler-h w-full main">
+                
+               
+                <div class="addToCart m-2 border bordre-gray-200 bordre-1 rounded-xl w-bordre pizza-img   ">
+                    <img src="./img/img 1.png" alt="" class="">
+                    <h2 class="text-base mb-1 mt-3 ml-4">Special Pizza</h2>
+                    <h6 class="mb-1 text-sm  ml-4 coler-gray">Pizza</h6>
+                    <p class="coler-blue  ml-4 text-xl ">31 $</p>
+                    <button class="text-xl border w-48 mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                    </div>
+                
+                 
+                <div class="addToCart m-2 border bordre-gray-200 bordre-1 rounded-xl w-bordre  Burger-img   ">
+                    <img src="./img/img 2.png" alt="" class="h-30 Burger">
+                    <h2 class="text-base mb-1 mt-3 ml-4">Borj Burger</h2>
+                    <h6 class="mb-1 text-sm ml-4 coler-gray">Burger</h6>
+                    <p class="coler-blue ml-4 text-xl"> 25 $</p>
+                    <button class="text-xl border w-48 mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                </div>
+                 <div class="addToCart m-2 border bordre-gray-200 bordre-1 rounded-xl w-bordre Sandwich-img">
+                    <img src="./img/img 3.png" alt="" class="Burger">
+                    <h2 class="text-base mb-1 mt-3 ml-4">Jigo Sandwich</h2>
+                    <h6 class="mb-1 text-sm ml-4 coler-gray">Sandwich</h6>
+                    <p class="coler-blue ml-4 text-xl">18 $</p>
+                    <button class="text-xl border w-48 mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                </div>
+                
+            
+                
+                 <div class="addToCart m-2   border bordre-gray-200 bordre-1 rounded-xl w-bordre Burger-img ">
+                    <img src="./img/img 4.png" alt="" class="Burger">
+                    <h2 class="text-base mb-1 mt-3 ml-4">Ghol Burger</h2>
+                    <h6 class="mb-1 text-sm ml-4 coler-gray">Burger</h6>
+                    <p class="coler-blue ml-4 text-xl">20 $</p>
+                    <button class="text-xl border w-48 mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                </div>
+                <div class="addToCart m-2   border bordre-gray-200 bordre-1 rounded-xl w-bordre pizza-img ">
+                    <img src="./img/img 5.png" alt="" class="pizza">
+                    <h2 class="text-base mb-1 mt-3 ml-4">Pan Pizza</h2>
+                    <h6 class="mb-1 text-sm ml-4 coler-gray">Pizza</h6>
+                    <p class="coler-blue ml-4 text-xl">32 $</p>
+                    <button class="text-xl border w-48 mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                </div>
+                 <div class="addToCart m-2   border bordre-gray-200 bordre-1 rounded-xl w-bordre Drink-img ">
+                    <img src="./img/img 6.png" alt="" class="Drink">
+                    <h2 class="text-base mb-1 mt-3 ml-4">Espresso</h2>
+                    <h6 class="mb-1 text-sm ml-4 coler-gray">Drink</h6>
+                    <p class="coler-blue ml-4 text-xl">8 $</p>
+                    <button class="text-xl border w-48 mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                </div>
+                    
+            
+                
+                 <div class="addToCart m-2 border bordre-gray-200 bordre-1 rounded-xl w-bordre pizza-img ">
+                    <img src="./img/img 7.png" alt="" class="pizza">
+                    <h2 class="text-base mb-1 mt-3 ml-4">Four Season Pizza</h2>
+                    <h6 class="mb-1 text-sm ml-4 coler-gray">Pizza</h6>
+                    <p class="coler-blue ml-4 text-xl">45 $</p>
+                    <button class="text-xl border w-48 mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                </div>
+                <div class="addToCart m-2 border bordre-gray-200 bordre-1 rounded-xl w-bordre Drink-img ">
+                    <img src="./img/img 8.png" alt="" class="Drink">
+                    <h2 class="text-base mb-1 mt-3 ml-4">Turk</h2>
+                    <h6 class="mb-1 text-sm ml-4 coler-gray">Drink</h6>
+                    <p class="coler-blue ml-4 text-xl">7 $</p>
+                    <button class="text-xl border w-48 mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                </div>
+                 <div class="addToCart m-2 border bordre-gray-200 bordre-1 rounded-xl h-border Sandwich-img ">
+                    <img src="./img/img 9.png" alt="" class="Burger">
+                    <h2 class="text-base mb-1 mt-3 ml-4">Egg Sandwich</h2>
+                    <h6 class="mb-1 text-sm ml-4 coler-gray">Sandwich</h6>
+                    <p class="coler-blue ml-4 text-xl">12 $</p>
+                    <button class="text-xl border w-48 mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                </div>
+                </article>
+                
+            </div>
+    </main>
+
+    <!-- ------------------------------------------------------------- -->
+
+    
+    <div class="mar-tap w-12/12  ">
+        <section class="flex md:hidden flex flex-col w-full main2">
+            <article class="flex flex-col mx-auto w-12/12 class-es main ">
+                <article class="flex flex-row mx-auto  mb-6   ">
+                    <h6 class="mr-5 c-blue">Sort By lowest Price</h6>
+                    <h6 class="ml-5 c-blue">Sort By Highest Price</h6>
+                </article>
+       
+                
+                    
+                <div class="bordre-gray-200 withe bordre-1 rounded-xl border h-border pizza-img  ">
+                        <img src="./img/img 1.png" alt="" class="w-full h-30">
+                        <h2 class="text-em py-1 pt-3 ml-4">Special Pizza</h2>
+                        <h6 class="pt-1 ml-4 coler-gray">Pizza</h6>
+                        <p class="coler-blue  ml-4 mt-3">31 $</p>
+                        <button class=" text-xl border  mt-3 rounded-xl py-1 addCart ml-4 ">add to shap</button>
+                </div>
+                
+                 
+                
+                    
+                <div class="border withe bordre-gray-200 bordre-1 rounded-xl h-border h-border Burger-img">
+                        <img src="./img/img 2.png" alt="">
+                        <h2 class="text-em py-1 pt-2 ml-4">Borj Burger</h2>
+                        <h6 class="px-1 coler-gray ml-4">Burger</h6>
+                        <p class="coler-blue  ml-4 mt-2"> 25 $</p>
+                        <button class=" text-xl border  mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                </div>
+                
+                 <div class="addToCart withe m-2 border bordre-gray-200 bordre-1 rounded-xl h-border Sandwich-img ">
+                    <img src="./img/img 3.png" alt="">
+                    <h2 class="text-em py-1 pt-2 ml-4">Jigo Sandwich</h2>
+                    <h6 class="px-1 coler-gray ml-4">Sandwich</h6>
+                    <p class="coler-blue  ml-4 mt-2">18 $</p>
+                    <button class=" text-xl border  mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                </div>
+                
+            
+                <div class="addToCart withe m-2 border bordre-gray-200 bordre-1 rounded-xl h-border Burger-img ">
+                    <img src="./img/img 4.png" alt="">
+                    <h2 class="text-em py-1 pt-2 ml-4">Ghol Burger</h2>
+                    <h6 class="px-1 coler-gray ml-4">Burger</h6>
+                    <p class="coler-blue  ml-4 mt-2">20 $</p>
+                    <button class=" text-xl border  mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                </div>
+                <div class="pizza-img">
+                    <div class="addToCart withe m-2 border bordre-gray-200 bordre-1 rounded-xl h-border  ">
+                        <img src="./img/img 5.png" alt="">
+                        <h2 class="text-em py-1 pt-2 ml-4">Pan Pizza</h2>
+                        <h6 class="px-1 coler-gray ml-4">Pizza</h6>
+                        <p class="coler-blue  ml-4 mt-2">32 $</p>
+                        <button class=" text-xl border  mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                    </div>
+                </div>
+                 <div class="addToCart withe m-2 border bordre-gray-200 bordre-1 rounded-xl h-border Drink-img ">
+                    <img src="./img/img 6.png" alt="">
+                    <h2 class="text-em py-1 pt-2 ml-4">Espresso</h2>
+                    <h6 class="px-1 coler-gray ml-4">Drink</h6>
+                    <p class="coler-blue  ml-4 mt-2">8 $</p>
+                    <button class=" text-xl border  mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                </div>
+                    
+            
+                
+                 <div class="addToCart withe m-2 border bordre-gray-200 bordre-1 rounded-xl h-border pizza-img ">
+                    <img src="./img/img 7.png" alt="">
+                    <h2 class="text-em py-1 pt-2 ml-4">Four Season Pizza</h2>
+                    <h6 class="px-1 coler-gray ml-4">Pizza</h6>
+                    <p class="coler-blue  ml-4 mt-2">45 $</p>
+                    <button class=" text-xl border  mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                </div>
+                <div class="addToCart withe m-2 border bordre-gray-200 bordre-1 rounded-xl h-border Drink-img ">
+                    <img src="./img/img 8.png" alt="">
+                    <h2 class="text-em py-1 pt-2 ml-4">Turk</h2>
+                    <h6 class="px-1 coler-gray ml-4">Drink</h6>
+                    <p class="coler-blue  ml-4 mt-2">7 $</p>
+                    <button class=" text-xl border  mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                </div>
+                 <div class="addToCart withe m-2 border bordre-gray-200 bordre-1 rounded-xl h-border Sandwich-img ">
+                    <img src="./img/img 9.png" alt="">
+                    <h2 class="text-em py-1 pt-2 ml-4">Egg Sandwich</h2>
+                    <h6 class="px-1 coler-gray ml-4">Sandwich</h6>
+                    <p class="coler-blue  ml-4 mt-2">12 $</p>
+                    <button class=" text-xl border  mt-3 rounded-xl py-1 addCart ml-4">add to shap</button>
+                    </div>
+                </article>
+
+        </section>
+    </div>
+    
+
+
+
+        
+    
+    
+    
+
+</body>
+<script src="./app2.js"></script>
+</html>
